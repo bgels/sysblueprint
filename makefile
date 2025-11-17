@@ -1,9 +1,9 @@
 .PHONY: all compile clean run
-compile: structrw.o
-	@gcc -o structrw structrw.o
-structrw.o: structrw.c
-	@gcc -c structrw.c -o structrw.o
+compile: main.o
+	@gcc -o main main.o
+main.o: main.c
+	@gcc -c main.c -o main.o
 clean:
-	@rm -rf *.o structrw
+	@rm -rf *.o main
 run:
-	@./structrw $(ARGS)
+	@./main $(ARGS)
