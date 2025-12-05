@@ -5,6 +5,7 @@
 
 #include <dirent.h>
 #include <fcntl.h>
+#include <math.h>
 #include <unistd.h>
 #include <time.h>
 #include <errno.h>
