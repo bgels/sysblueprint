@@ -5,13 +5,17 @@
 #include <string.h>
 #include <signal.h>
 
+#include <dirent.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <sys/stat.h>
-#include <errno.h>
 #include <time.h>
+#include <errno.h>
+#include <sys/stat.h>
+#include <sys/wait.h>
 #include <sys/types.h>
-#include <dirent.h>
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/sem.h>
 
 int err();
 #endif
